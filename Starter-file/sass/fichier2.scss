@@ -12,11 +12,25 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
+    
+    // background-image: url("../dist/png/Merged\ bar-53.png");
+    .bg1{
+        width: 200%;
+        position: absolute;
+      
+        top: 0;
+        right: 0;
+        z-index: -10;
+    }
+    // .img{
+
+    // }
     nav{
         width: 60%;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        position: absolute;
         button{
             background-color: transparent;
         }

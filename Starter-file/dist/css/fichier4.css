@@ -1,0 +1,6 @@
+.rect4 {
+  display: flex;
+  flex-direction: column; }
+  .rect4__heights {
+    display: flex;
+    flex-direction: row; }
