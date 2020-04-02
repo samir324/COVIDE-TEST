@@ -35,6 +35,19 @@ header{
         margin-left: 30%;
         button{
             background-color: transparent;
+            border: 2px solid #1078AD;
+            border-radius: 10px;
+            padding: .1rem .5rem;
+            display: flex;
+            align-items: center;
+            height: 1.5rem;
+            font-size: .7rem;
+            transition-duration: 0.3s;
+
+            &:hover {
+                opacity: .5;
+                box-shadow: 0px 2px $black;
+            }
         }
         ul{
             width: 60%;
@@ -43,9 +56,14 @@ header{
             list-style: none;
             li{
                 a{
+                  
                     text-decoration: none;
                     color: $black;
                     font-weight: bold;
+                    transition-duration: 0.3s;
+                    &:hover{
+                        color: $color1;
+                    }
                 }
             }
         }
