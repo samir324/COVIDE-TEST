@@ -1,4 +1,7 @@
-
+@import "./_fichier1.scss";
+@import "./_fichier2.scss";
+@import "./_fichier3.scss";
+@import "./_fichier4.scss";
 //variables
 $black:#2B2B2C;
 $white:#FFFFFF;
@@ -7,3 +10,6 @@ $color2:#F4CF1B;
 $color3:#7F7F7F;
 $color4:#D0E5F0;
 $color5:#369D53;
+body{
+    margin: 0 auto;
+}

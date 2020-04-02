@@ -1,0 +1,45 @@
+//variables
+$black:#2B2B2C;
+$white:#FFFFFF;
+$color1:#1078AD;
+$color2:#F4CF1B;
+$color3:#7F7F7F;
+$color4:#D0E5F0;
+$color5:#369D53;
+.footer{
+    width: 100%;
+    img{
+       margin-left: 48.5%;
+    }
+    .rect5{
+        margin-left: 10%;
+        margin-right: 4%;
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        &__part2{
+            
+        }
+        &__part3{
+            width: 50%;
+            p{
+                font-size: 1rem;
+                margin-left: 5%;
+               
+                
+            }
+            
+        }
+
+    }
+
+    .blue{
+        width: 100vw;
+        height: 3vh;
+        border-radius: 5px 5px 0 0;
+        background-color: $color1;
+       
+    }
+   
+}

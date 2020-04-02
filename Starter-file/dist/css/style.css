@@ -1,0 +1,176 @@
+@charset "UTF-8";
+#rect1 {
+  text-align: center;
+  background-color: #F4CF1B;
+  bottom: 10px;
+  width: 100%;
+  height: 18vh;
+  margin-top: -8px; }
+  #rect1 h4 {
+    padding-top: 2%; }
+
+p {
+  margin: 0; }
+
+.rect2 {
+  display: flex;
+  flex-direction: row; }
+  .rect2__right {
+    width: 50%; }
+    .rect2__right img {
+      width: 100%; }
+  .rect2__left {
+    width: 50%; }
+    .rect2__left h2 {
+      color: #1078AD;
+      text-align: center; }
+    .rect2__left img {
+      margin-left: 45%; }
+    .rect2__left p {
+      text-align: center;
+      font-size: x-large;
+      font-weight: bold;
+      color: #7F7F7F;
+      padding: .5rem; }
+    .rect2__left button {
+      margin-left: 30%;
+      margin-top: 10%;
+      padding: .5rem 18%;
+      background-color: #1078AD; }
+
+.rect3 {
+  width: 40%;
+  margin: 0 auto;
+  text-align: center; }
+  .rect3__photo1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+    .rect3__photo1__nausées h2 {
+      bottom: 20%; }
+  .rect3__photo2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+    .rect3__photo2__toux h2 {
+      margin-top: 20%; }
+
+@media only screen and (max-width: 500px) {
+  .p1 {
+    margin-top: 20px; } }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem; }
+  header .bg1 {
+    height: 18vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -10; }
+  header nav {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    margin-left: 30%; }
+    header nav button {
+      background-color: transparent; }
+    header nav ul {
+      width: 60%;
+      display: flex;
+      justify-content: space-around;
+      list-style: none; }
+      header nav ul li a {
+        text-decoration: none;
+        color: #2B2B2C;
+        font-weight: bold; }
+
+.footer {
+  width: 100%; }
+  .footer img {
+    margin-left: 48.5%; }
+  .footer .rect5 {
+    margin-left: 10%;
+    margin-right: 4%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+    .footer .rect5__part3 {
+      width: 50%; }
+      .footer .rect5__part3 p {
+        font-size: 1rem;
+        margin-left: 5%; }
+  .footer .blue {
+    width: 100vw;
+    height: 3vh;
+    border-radius: 5px 5px 0 0;
+    background-color: #1078AD; }
+
+.rect4 {
+  text-align: center;
+  display: flex;
+  flex-direction: column; }
+  .rect4__heights1 {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #1078AD;
+    height: 40vh; }
+    .rect4__heights1 h1 {
+      color: #FFFFFF; }
+  .rect4__heights {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .rect4__heights--left ul {
+      font-size: x-large;
+      font-weight: bold;
+      list-style: none;
+      text-align: left; }
+      .rect4__heights--left ul li {
+        color: #FFFFFF; }
+        .rect4__heights--left ul li span {
+          color: #2B2B2C; }
+    .rect4__heights--right h1 {
+      color: #F4CF1B; }
+    .rect4__heights--right button {
+      background-color: #F4CF1B;
+      color: #1078AD;
+      border: none;
+      font-size: 1.3rem;
+      border-radius: 10px;
+      padding: 1rem 2rem;
+      margin: auto; }
+    .rect4__heights--right a {
+      bottom: 19%;
+      padding: 1rem;
+      font-size: x-large;
+      font-weight: bold;
+      color: #FFFFFF;
+      text-decoration: underline #F4CF1B; }
+  .rect4__bottoms {
+    height: 30vh;
+    background-color: #D0E5F0; }
+    .rect4__bottoms h1 {
+      color: #1078AD; }
+    .rect4__bottoms img {
+      margin-bottom: 1%; }
+    .rect4__bottoms button {
+      background-color: #1078AD;
+      color: #FFFFFF;
+      font-size: 1.3rem;
+      border-radius: 10px;
+      padding: .5rem 15rem;
+      margin: auto;
+      font-size: xx-large;
+      font-weight: bold; }
+
+body {
+  margin: 0 auto; }
