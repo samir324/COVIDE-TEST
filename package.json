@@ -5,11 +5,11 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "compil": "node-sass Starter-file/sass -o Starter-file/dist/css",
-        "watch": "node-sass -w Starter-file/sass -o Starter-file/dist/css",
-        "concat": "concat -o Starter-file/dist/css/style.css  Starter-file/dist/css/fichier1.css Starter-file/dist/css/fichier2.css Starter-file/dist/css/fichier3.css Starter-file/dist/css/fichier4.css",
-        "compress": "node-sass --output-style compressed Starter-file/sass -o Starter-file/dist/css",
-        "prefix": "postcss --use autoprefixer -b 'last 5 versions' Starter-file/dist/css/style.css -o Starter-file/dist/css/style.prefix.css"
+        "compil": "node-sass sass -o /dist/css",
+        "watch": "node-sass -w sass -o /dist/css",
+        "concat": "concat -o /dist/css/style.css  /dist/css/fichier1.css /dist/css/fichier2.css /dist/css/fichier3.css /dist/css/fichier4.css",
+        "compress": "node-sass --output-style compressed /sass -o /dist/css",
+        "prefix": "postcss --use autoprefixer -b 'last 5 versions' /dist/css/style.css -o /dist/css/style.prefix.css"
     },
     "repository": {
         "type": "git",
