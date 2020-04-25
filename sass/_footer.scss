@@ -1,12 +1,3 @@
-//variables
-$black:#2B2B2C;
-$white:#FFFFFF;
-$color1:#1078AD;
-$color2:#F4CF1B;
-$color3:#7F7F7F;
-$color4:#D0E5F0;
-$color5:#369D53;
-
 .footer {
     width: 100%;
 
@@ -15,12 +6,11 @@ $color5:#369D53;
     }
 
     .rect5 {
-        
-        // margin-right: 4%;
         width: 100%;
         display: flex;
         flex-direction: row;
-
+        padding-bottom: 3%;
+       
         &__part1 {
             width: 10%;
             margin-left: 10%;
@@ -81,7 +71,8 @@ $color5:#369D53;
            text-align: center;
             width: 25%;
             margin-left: 7%;
-            h1{
+            margin-top: 2%;
+            h2{
                 color: $color1;
                 
             }
@@ -99,12 +90,13 @@ $color5:#369D53;
         &__part3 {
             width: 50%;
             margin-left: 8%;
+            text-align: left;
 
             p {
                 font-size: 1.1rem;
                 font-weight: bold;
-                margin-top: 12%;
-                color: $color3;
+                margin-top: 10%;
+                color:#7F7F7F;
 
             }
 
@@ -114,7 +106,7 @@ $color5:#369D53;
 
     .blue {
         width: 100%;
-        height: 3vh;
+        height: 30px;
         border-radius: 5px 5px 0 0;
         background-color: $color1;
 

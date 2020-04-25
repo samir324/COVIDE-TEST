@@ -1,52 +1,45 @@
-//variables
-$black:#2B2B2C;
-$white:#FFFFFF;
-$color1:#1078AD;
-$color2:#F4CF1B;
-$color3:#7F7F7F;
-$color4:#D0E5F0;
-$color5:#369D53;
-
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: .5rem 2rem;
     
-    // background-image: url("../dist/png/Merged\ bar-53.png");
     .bg1{
-        height: 18vh;
         width: 100%;
         position: absolute;
-      
         top: 0;
         right: 0;
         z-index: -10;
+        margin-bottom: 20%;
     }
-    // .img{
-
-    // }
+    img{
+        margin-left:    55%;
+    }
+   
+    
     nav{
-        width: 60%;
+        width: 40%;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         position: absolute;
-        margin-left: 30%;
+        margin-left:    55%;
         button{
             background-color: transparent;
             border: 2px solid #1078AD;
             border-radius: 10px;
-            padding: .1rem .5rem;
+            padding: .3rem .8rem;
             display: flex;
-            align-items: center;
-            height: 1.5rem;
-            font-size: .7rem;
+            font-size: 1rem;
             transition-duration: 0.3s;
 
             &:hover {
                 opacity: .5;
                 box-shadow: 0px 2px $black;
+            }
+            img{
+                margin-top: 12%;
+                margin-left: 7%;
             }
         }
         ul{
@@ -56,7 +49,7 @@ header{
             list-style: none;
             li{
                 a{
-                  
+                    font-size: 1.4rem;
                     text-decoration: none;
                     color: $black;
                     font-weight: bold;

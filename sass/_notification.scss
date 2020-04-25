@@ -1,0 +1,36 @@
+$black:#2B2B2C;
+$white:#FFFFFF;
+$color1:#1078AD;
+$color2:#F4CF1B;
+$color3:#7F7F7F;
+$color4:#D0E5F0;
+$color5:#369D53;
+#rect1 {
+
+    text-align: center;
+    background-color: $color2;
+    // border: 3px solid black;
+
+    // bottom: 10px;
+    width: 100%;
+    height: 20vh;
+    // margin-top: -25px;
+
+
+    h4 {
+        padding-top: 2%;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
+    p {
+
+        color: $color1;
+        font-weight: bold;
+        font-size: 1.2rem;
+
+    }
+
+
+}
+

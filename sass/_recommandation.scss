@@ -1,18 +1,16 @@
 .rect4 {
     text-align: center;
-
+    display: flex;
+    flex-direction: column;
     &__heights1 {
         width: 100%;
         margin: 0 auto;
         background-color: $color1;
-        height: 40vh;
+        
         h1{
             color: $white;
         }
     }
-
-    display: flex;
-    flex-direction: column;
 
     &__heights {
         width: 80%;
@@ -24,10 +22,11 @@
 
         &--left {
             ul {
-                font-size: x-large;
+                font-size:1.5rem;
                 font-weight: bold;
                 list-style: none;
                 text-align: left;
+                margin-bottom: 20px;
 
                 li {
                     color: $white;
@@ -65,8 +64,8 @@
 
     }
     &__bottoms{
-        height: 30vh;
-        background-color: $color4;
+        padding-bottom: 2%;
+        background-color: #96C5DC;
 
         h1{
             color: $color1;
@@ -80,10 +79,11 @@
             // border: none;
             font-size: 1.3rem;
             border-radius: 10px;
-            padding: .5rem 15rem;
+            padding: .1rem 15rem;
             margin: auto;
             font-size: xx-large;
             font-weight: bold;
+            border: none;
             
 
         }

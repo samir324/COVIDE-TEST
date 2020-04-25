@@ -1,0 +1,262 @@
+@mixin flex ($v1, $v2) {
+    display:$v1;
+    flex-direction: $v2;
+}
+@mixin jstAlgn ($i1, $c1) {
+    justify-content: $i1;
+        align-items: $c1;
+}
+$color6:#88b7d3;
+@mixin bfrAftr ($w, $h,$r,$p,$t,$b) {
+    width:$w ;
+    height:$h ;
+    background-color: $b;
+    border-radius: $r;
+    position: $p;
+    top: $t;
+}
+@mixin proprietebar ($w, $h,$r,$b) {
+    width:$w ;
+    height:$h ;
+    background-color: $b;
+    border-radius: $r;
+}
+
+$bgcolor4: rgb(168, 210, 233);
+.Préambule {
+    width: 60%;
+    @include flex (flex, column);
+    text-align: center;
+    background-color:$bgcolor4;
+    margin: 20px auto;
+    padding: 10px 40px;
+    border-radius: 5px;
+
+    p {
+        font-size: large;
+        font-weight: bold;
+    }
+
+    hr {
+        border: 1px solid $color2;
+        width: 20%;
+        margin: 20px auto;
+    }
+
+    button {
+        padding: .1rem 8rem;
+        background-color: $color1;
+        font-size: 1.4rem;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+        color: $white;
+        margin-top: 5%;
+
+    }
+}
+
+.etape {
+    padding: 55px 15% 10px;
+    @include flex (flex, row);
+    text-align: center;
+    justify-content: space-evenly;
+
+    h1 {
+        font-size: 20px;
+        color: $color1;
+        position: relative;
+        @include flex (flex, row);
+        @include jstAlgn (center, center);
+
+        &::before {
+            content: '';
+            @include bfrAftr (22px,22px,50%,absolute,-25px,$color1);
+          
+        }
+
+        &::after {
+            content: '';
+            @include bfrAftr (22px,22px,50%,absolute,-25px,$color6);
+            z-index: -12;
+            transition: all .3s ease;
+        }
+
+    }
+
+    .etape-actuelle {
+        &::before {
+            content: '';
+            @include bfrAftr (22px,22px,50%,absolute,-30px,$color2);
+            z-index: 150;
+        }
+
+        &::after {
+            content: '';
+            @include bfrAftr (48px,48px,50%,absolute,-43px,$color6);
+            z-index: 90;
+        }
+    }
+}
+
+
+
+
+
+.answer-inputs {
+    @include flex (flex, row);
+    @include jstAlgn (center, center);
+    height: 50%;
+    input[type="number"] {
+        font-size: 16px;
+        border: 1px solid $color1;
+        width: 55%;
+        padding: 10px;
+    }
+    .input-span {
+        font-size: 16px;
+        border: 1px solid $color1;
+        border-left: none;
+        padding: 4px 10px 5px;
+        color: #555555;
+        background-color: #edf6fa;
+    }
+    input[type="radio"] {
+        -webkit-appearance: none;
+    }
+    input[type="radio"]:checked+label {
+        background-color: $color1;
+        color: #F4CF1B;
+    }
+    label {
+        height: 80px;
+        width: 120px;
+        color: $color1;
+        border-radius: 4px;
+        border: 4px solid $color1;
+        font-size: 30px;
+        @include flex (flex, column);
+        @include jstAlgn (center, center);
+        padding: 9px 0px 0;
+        transition: .5s ease;
+        margin-right: 50px;
+        span {
+            font-size: 22px;
+            position: relative;
+            bottom: 5px;
+        }
+    }
+    
+}
+
+
+
+
+
+.quicontainer {
+    width: 70%;
+    border: 1px solid rgb(190, 190, 190);
+    margin: 20px auto;
+    border-radius: 4px;
+    margin-bottom: 50px;
+    overflow: hidden;
+
+
+    p {
+        text-align: center;
+        font-size: 31px;
+        color: #787878;
+        font-weight: bolder;
+        width: 82%;
+        margin: 70px auto;
+    }
+
+    .avancement {
+        @include flex (flex, row);
+        @include jstAlgn (center, center);
+        padding: 7px 0;
+        background-color: #f7f7f7;
+        border-radius: 4px;
+        border-bottom: 1px solid rgb(190, 190, 190);
+
+        h3 {
+            font-weight: bolder;
+            margin-right: 15px;
+        }
+
+        &__bar {
+            @include proprietebar ( 90%, 10px,20px,#e6f1f7);
+            overflow: hidden;
+
+
+            .bar {
+            @include proprietebar ( 5%,100%,20px,$color1);
+                transition: all .4s ease;
+            }
+        }
+    }
+}
+
+
+@mixin proprietebtn ($f, $r, $c,$b,$p,$br) {
+
+    font-size: $f;
+    color:  $c;
+    background-color: $b;
+    padding: $p;
+    border: $br;
+    border-radius:$r;
+}
+
+.btnDemarer {
+    @include proprietebtn (22px, 6px, white,$color1,10px 30px 10px,3px solid $color1);
+    font-weight: bolder;
+    cursor: pointer;
+    transition: all .3s ease;
+    margin: 10px auto 50px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+
+
+
+    &:hover {
+        color: $color1;
+        background-color: transparent;
+
+    }
+}
+
+
+
+
+.btn-suitsh {
+    margin: 110px 0 40px;
+    padding: 0 50px;
+    @include flex (flex, row);
+    @include jstAlgn (space-between,center );
+    width: 100%;
+
+
+
+
+    button {
+    @include proprietebtn (17px, 4px, $color1,#cfe4ef,10px 20px,2px solid $color1);
+        transition: .3s ease;
+        &:hover {
+            background-color: $color1;
+            color: white;
+        }
+
+        // &:disabled {
+        //     cursor: not-allowed;
+        //     opacity: .65;
+
+        //     &:hover {
+        //         background-color: #cfe4ef !important;
+        //         color: $color1 !important;
+        //     }
+
+        // }
+    }
+}
