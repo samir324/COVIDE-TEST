@@ -7,6 +7,7 @@
         align-items: $c1;
 }
 $color6:#88b7d3;
+$CWidth: calc(1 * calc(100% / 22));
 @mixin bfrAftr ($w, $h,$r,$p,$t,$b) {
     width:$w ;
     height:$h ;
@@ -107,27 +108,6 @@ $bgcolor4: rgb(168, 210, 233);
     @include flex (flex, row);
     @include jstAlgn (center, center);
     height: 50%;
-    input[type="number"] {
-        font-size: 16px;
-        border: 1px solid $color1;
-        width: 55%;
-        padding: 10px;
-    }
-    .input-span {
-        font-size: 16px;
-        border: 1px solid $color1;
-        border-left: none;
-        padding: 15px 10px 5px;
-        color: #555555;
-        background-color: #edf6fa;
-    }
-    input[type="radio"] {
-        -webkit-appearance: none;
-    }
-    input[type="radio"]:checked+label {
-        background-color: $color1;
-        color: #F4CF1B;
-    }
     label {
         @include flex (flex, column);
         @include jstAlgn (center, center);
@@ -146,6 +126,30 @@ $bgcolor4: rgb(168, 210, 233);
             bottom: 5px;
         }
     }
+  
+    input[type="radio"] {
+        -webkit-appearance: none;
+    }
+    input[type="radio"]:checked~label {
+        background-color: $color1;
+        color: #F4CF1B;
+    }
+
+    input[type="number"] {
+        font-size: 16px;
+        border: 1px solid $color1;
+        width: 55%;
+        padding: 10px;
+    }
+    .input-span {
+        font-size: 16px;
+        border: 1px solid $color1;
+        border-left: none;
+        padding: 15px 10px 5px;
+        color: #555555;
+        background-color: #edf6fa;
+    }
+   
     
 }
 
@@ -190,7 +194,7 @@ $bgcolor4: rgb(168, 210, 233);
 
 
             .bar {
-            @include proprietebar ( 5%,100%,20px,$color1);
+            @include proprietebar ($CWidth,100%,20px,$color1);
                 transition: all .4s ease;
             }
         }
@@ -235,11 +239,15 @@ $bgcolor4: rgb(168, 210, 233);
     width: 100%;
 
     button {
-    @include proprietebtn (17px, 4px, $color1,#cfe4ef,10px 20px,2px solid $color1);
+        @include proprietebtn (17px, 4px, $color1,#cfe4ef,10px 20px,2px solid $color1);
         transition: .3s ease;
         &:hover {
             background-color: $color1;
             color: white;
+        }
+        &:disabled {
+            cursor: not-allowed;
+            opacity: .50;
         }
 
     }
@@ -247,5 +255,6 @@ $bgcolor4: rgb(168, 210, 233);
     .last-btn{
         display: none;
     }
+    
     
 }
