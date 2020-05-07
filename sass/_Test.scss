@@ -59,6 +59,7 @@ $bgcolor4: rgb(168, 210, 233);
 
 .etape {
     padding: 55px 15% 10px;
+    margin-top: 15px;
     @include flex (flex, row);
     text-align: center;
     justify-content: space-evenly;
@@ -165,7 +166,6 @@ $bgcolor4: rgb(168, 210, 233);
     margin-bottom: 50px;
     overflow: hidden;
 
-
     p {
         text-align: center;
         font-size: 31px;
@@ -228,9 +228,6 @@ $bgcolor4: rgb(168, 210, 233);
     }
 }
 
-
-
-
 .btn-switsh {
     margin: 110px 0 40px;
     padding: 0 50px;
@@ -258,3 +255,13 @@ $bgcolor4: rgb(168, 210, 233);
     
     
 }
+
+
+
+
+
+
+
+
+
+
